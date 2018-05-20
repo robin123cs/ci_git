@@ -5,8 +5,10 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		echo 'Home';
+		//echo 'Home';
 		
-		//$this->load->view('welcome_message');
+		$data['home'] = 'This is from Home controller.';
+		
+		$this->load->view('home', $data);
 	}
 }
