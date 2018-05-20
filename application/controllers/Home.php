@@ -9,6 +9,8 @@ class Home extends CI_Controller {
 		
 		$data['home'] = 'This is from Home controller.';
 		
+		$data['extra'] = 'This is extra from Home.';
+		
 		$this->load->view('home', $data);
 	}
 }
